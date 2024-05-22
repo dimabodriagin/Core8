@@ -6,8 +6,8 @@ public class NASAContent {
     private final String date;
     private final String explanation;
     private final String hdurl;
-    private final String media_type;
-    private final String service_version;
+    private final String mediaType;
+    private final String serviceVersion;
     private final String title;
     private final String url;
 
@@ -16,8 +16,8 @@ public class NASAContent {
             @JsonProperty("date") String date,
             @JsonProperty("explanation") String explanation,
             @JsonProperty("hdurl") String hdurl,
-            @JsonProperty("media_type") String media_type,
-            @JsonProperty("service_version") String service_version,
+            @JsonProperty("media_type") String mediaType,
+            @JsonProperty("service_version") String serviceVersion,
             @JsonProperty("title") String title,
             @JsonProperty("url") String url
     ) {
@@ -25,8 +25,8 @@ public class NASAContent {
         this.date = date;
         this.explanation = explanation;
         this.hdurl = hdurl;
-        this.media_type = media_type;
-        this.service_version = service_version;
+        this.mediaType = mediaType;
+        this.serviceVersion = serviceVersion;
         this.title = title;
         this.url = url;
     }
@@ -47,12 +47,12 @@ public class NASAContent {
         return hdurl;
     }
 
-    public String getMedia_type() {
-        return media_type;
+    public String getMediaType() {
+        return mediaType;
     }
 
-    public String getService_version() {
-        return service_version;
+    public String getServiceVersion() {
+        return serviceVersion;
     }
 
     public String getTitle() {
@@ -70,8 +70,8 @@ public class NASAContent {
                 "\n date = " + date +
                 "\n explanation = " + explanation +
                 "\n hdurl = " + hdurl +
-                "\n media_type = " + media_type +
-                "\n service_version = " + service_version +
+                "\n mediaType = " + mediaType +
+                "\n serviceVersion = " + serviceVersion +
                 "\n title = " + title +
                 "\n url = " + url;
     }
